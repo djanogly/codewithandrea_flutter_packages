@@ -13,7 +13,7 @@ class FirestoreService {
       String userField,
       int number,
       Map<String, dynamic> data}) async {
-    var batch = databaseReference.batch();
+    var batch = FirebaseFirestore.instance.batch();
     final userRef = FirebaseFirestore.instance.doc(userPath);
     final couponRef = FirebaseFirestore.instance.doc(couponPath);
     batch.set(couponRef, data);
