@@ -6,7 +6,22 @@ import 'package:flutter/foundation.dart';
 class FirestoreService {
   FirestoreService._();
   static final instance = FirestoreService._();
-
+  
+  Future<void> setBatch(
+      {String couponPath,
+      String userPath,
+      String userField,
+      int number,
+      Map<String, dynamic> data}) async {
+    var batch = databaseReference.batch();
+    final userRef = FirebaseFirestore.instance.doc(userPath);
+    final couponRef = FirebaseFirestore.instance.doc(couponPath);
+    batch.set(couponRef, data);
+    batch.update(userRef, {userField: FieldValue.increment(-number)});
+    print('$couponPath: $data');
+    await batch.commit();
+  }
+  
   Future<void> setData({
     @required String path,
     @required Map<String, dynamic> data,
