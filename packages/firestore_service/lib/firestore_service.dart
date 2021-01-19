@@ -7,9 +7,8 @@ class FirestoreService {
   FirestoreService._();
   static final instance = FirestoreService._();
 
-  Future<bool> checkExists({String collection, String doc}) async {
-    final snapShot =
-        await FirebaseFirestore.instance.collection(collection).doc(doc).get();
+  Future<bool> checkExists({String path}) async {
+    final snapShot = await FirebaseFirestore.instance.doc(path).get();
 
     if (snapShot == null || !snapShot.exists) {
       // Document with id == docId doesn't exist.
