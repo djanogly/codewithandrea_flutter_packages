@@ -6,8 +6,8 @@ packages:
     description:
       path: "packages/alert_dialogs"
       ref: HEAD
-      resolved-ref: d8e88e000935345ebacc31e1176c1e4d226fb18a
-      url: "https://github.com/bizz84/codewithandrea_flutter_packages"
+      resolved-ref: "61c1607be0d43558ad88d83547ba09a1b1a82957"
+      url: "https://github.com/djanogly/codewithandrea_flutter_packages"
     source: git
     version: "0.1.0"
   async:
@@ -16,49 +16,49 @@ packages:
       name: async
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.4.2"
+    version: "2.5.0-nullsafety.1"
   boolean_selector:
     dependency: transitive
     description:
       name: boolean_selector
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.0"
+    version: "2.1.0-nullsafety.1"
   characters:
     dependency: transitive
     description:
       name: characters
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.0"
+    version: "1.1.0-nullsafety.3"
   charcode:
     dependency: transitive
     description:
       name: charcode
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.1.3"
+    version: "1.2.0-nullsafety.1"
   clock:
     dependency: transitive
     description:
       name: clock
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.1"
+    version: "1.1.0-nullsafety.1"
   collection:
     dependency: transitive
     description:
       name: collection
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.14.13"
+    version: "1.15.0-nullsafety.3"
   custom_buttons:
     dependency: "direct main"
     description:
       path: "packages/custom_buttons"
       ref: HEAD
-      resolved-ref: "64550ae5b87ab9f8a6c72719aa4027ba8e375fb1"
-      url: "https://github.com/bizz84/codewithandrea_flutter_packages"
+      resolved-ref: "61c1607be0d43558ad88d83547ba09a1b1a82957"
+      url: "https://github.com/djanogly/codewithandrea_flutter_packages"
     source: git
     version: "0.0.1"
   fake_async:
@@ -67,56 +67,49 @@ packages:
       name: fake_async
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.1.0"
-  firebase:
-    dependency: transitive
-    description:
-      name: firebase
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "7.3.0"
+    version: "1.2.0-nullsafety.1"
   firebase_auth:
     dependency: "direct main"
     description:
       name: firebase_auth
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.18.0+1"
+    version: "0.20.0+1"
   firebase_auth_platform_interface:
     dependency: transitive
     description:
       name: firebase_auth_platform_interface
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.1"
+    version: "3.0.1"
   firebase_auth_web:
     dependency: transitive
     description:
       name: firebase_auth_web
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.3.0+1"
+    version: "0.3.2+6"
   firebase_core:
     dependency: transitive
     description:
       name: firebase_core
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.5.0"
+    version: "0.7.0"
   firebase_core_platform_interface:
     dependency: transitive
     description:
       name: firebase_core_platform_interface
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.0"
+    version: "3.0.1"
   firebase_core_web:
     dependency: transitive
     description:
       name: firebase_core_web
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.2.0"
+    version: "0.2.1+3"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -132,13 +125,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  http:
-    dependency: transitive
-    description:
-      name: http
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.12.2"
   http_parser:
     dependency: transitive
     description:
@@ -166,14 +152,14 @@ packages:
       name: matcher
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.12.8"
+    version: "0.12.10-nullsafety.1"
   meta:
     dependency: transitive
     description:
       name: meta
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.1.8"
+    version: "1.3.0-nullsafety.3"
   mockito:
     dependency: "direct dev"
     description:
@@ -187,14 +173,7 @@ packages:
       name: path
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.7.0"
-  pedantic:
-    dependency: transitive
-    description:
-      name: pedantic
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.9.0"
+    version: "1.8.0-nullsafety.1"
   plugin_platform_interface:
     dependency: transitive
     description:
@@ -220,35 +199,35 @@ packages:
       name: source_span
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.7.0"
+    version: "1.8.0-nullsafety.2"
   stack_trace:
     dependency: transitive
     description:
       name: stack_trace
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.9.5"
+    version: "1.10.0-nullsafety.1"
   stream_channel:
     dependency: transitive
     description:
       name: stream_channel
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.0"
+    version: "2.1.0-nullsafety.1"
   string_scanner:
     dependency: transitive
     description:
       name: string_scanner
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.5"
+    version: "1.1.0-nullsafety.1"
   string_validators:
     dependency: "direct main"
     description:
       path: "packages/string_validators"
       ref: HEAD
-      resolved-ref: "64550ae5b87ab9f8a6c72719aa4027ba8e375fb1"
-      url: "https://github.com/bizz84/codewithandrea_flutter_packages"
+      resolved-ref: "61c1607be0d43558ad88d83547ba09a1b1a82957"
+      url: "https://github.com/djanogly/codewithandrea_flutter_packages"
     source: git
     version: "0.0.1"
   term_glyph:
@@ -257,28 +236,28 @@ packages:
       name: term_glyph
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.1.0"
+    version: "1.2.0-nullsafety.1"
   test_api:
     dependency: transitive
     description:
       name: test_api
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.2.17"
+    version: "0.2.19-nullsafety.2"
   typed_data:
     dependency: transitive
     description:
       name: typed_data
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.2.0"
+    version: "1.3.0-nullsafety.3"
   vector_math:
     dependency: transitive
     description:
       name: vector_math
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.8"
+    version: "2.1.0-nullsafety.3"
 sdks:
-  dart: ">=2.9.0-14.0.dev <3.0.0"
+  dart: ">=2.10.0-110 <2.11.0"
   flutter: ">=1.12.13+hotfix.5 <2.0.0"

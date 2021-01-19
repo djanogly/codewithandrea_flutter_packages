@@ -6,14 +6,25 @@ import 'package:flutter/foundation.dart';
 class FirestoreService {
   FirestoreService._();
   static final instance = FirestoreService._();
-  
+
+  Future<bool> checkExists({String collection, String doc}) async {
+    final snapShot =
+        await FirebaseFirestore.instance.collection(collection).doc(doc).get();
+
+    if (snapShot == null || !snapShot.exists) {
+      // Document with id == docId doesn't exist.
+      return false;
+    }
+    return true;
+  }
+
   Future<void> setBatch(
       {String couponPath,
       String userPath,
       String userField,
       int number,
       Map<String, dynamic> data}) async {
-    var batch = FirebaseFirestore.instance.batch();
+    final batch = FirebaseFirestore.instance.batch();
     final userRef = FirebaseFirestore.instance.doc(userPath);
     final couponRef = FirebaseFirestore.instance.doc(couponPath);
     batch.set(couponRef, data);
@@ -21,7 +32,7 @@ class FirestoreService {
     print('$couponPath: $data');
     await batch.commit();
   }
-  
+
   Future<void> setData({
     @required String path,
     @required Map<String, dynamic> data,
