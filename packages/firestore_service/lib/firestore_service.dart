@@ -1,7 +1,6 @@
 library firestore_service;
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/foundation.dart';
 
 class FirestoreService {
   FirestoreService._();
@@ -33,8 +32,8 @@ class FirestoreService {
   }
 
   Future<void> setData({
-    @required String path,
-    @required Map<String, dynamic> data,
+    required String path,
+    required Map<String, dynamic> data,
     bool merge = false,
   }) async {
     final reference = FirebaseFirestore.instance.doc(path);
@@ -42,17 +41,17 @@ class FirestoreService {
     await reference.set(data, SetOptions(merge: merge));
   }
 
-  Future<void> deleteData({@required String path}) async {
+  Future<void> deleteData({required String path}) async {
     final reference = FirebaseFirestore.instance.doc(path);
     print('delete: $path');
     await reference.delete();
   }
 
   Stream<List<T>> collectionStream<T>({
-    @required String path,
-    @required T Function(Map<String, dynamic> data, String documentID) builder,
-    Query Function(Query query) queryBuilder,
-    int Function(T lhs, T rhs) sort,
+    required String path,
+    required T Function(Map<String, dynamic>? data, String documentID) builder,
+    Query Function(Query query)? queryBuilder,
+    int Function(T lhs, T rhs)? sort,
   }) {
     Query query = FirebaseFirestore.instance.collection(path);
     if (queryBuilder != null) {
@@ -72,8 +71,8 @@ class FirestoreService {
   }
 
   Stream<T> documentStream<T>({
-    @required String path,
-    @required T Function(Map<String, dynamic> data, String documentID) builder,
+    required String path,
+    required T Function(Map<String, dynamic>? data, String documentID) builder,
   }) {
     final DocumentReference reference = FirebaseFirestore.instance.doc(path);
     final Stream<DocumentSnapshot> snapshots = reference.snapshots();
