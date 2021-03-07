@@ -6,7 +6,7 @@ class FirestoreService {
   FirestoreService._();
   static final instance = FirestoreService._();
 
-  Future<bool> checkExists({String path}) async {
+  Future<bool> checkExists({required String path}) async {
     final snapShot = await FirebaseFirestore.instance.doc(path).get();
 
     if (snapShot == null || !snapShot.exists) {
@@ -17,11 +17,11 @@ class FirestoreService {
   }
 
   Future<void> setBatch(
-      {String couponPath,
-      String userPath,
-      String userField,
-      int number,
-      Map<String, dynamic> data}) async {
+      {required String couponPath,
+      required String userPath,
+      required String userField,
+      required int number,
+      required Map<String, dynamic> data}) async {
     final batch = FirebaseFirestore.instance.batch();
     final userRef = FirebaseFirestore.instance.doc(userPath);
     final couponRef = FirebaseFirestore.instance.doc(couponPath);
