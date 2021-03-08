@@ -16,17 +16,19 @@ dependencies:
     git:
       url: https://github.com/djanogly/codewithandrea_flutter_packages
       path: packages/alert_dialogs
+      ref: 1.22.6
   custom_buttons:
     #path: ../custom_buttons
     git:
       url: https://github.com/djanogly/codewithandrea_flutter_packages
       path: packages/custom_buttons
+      ref: 1.22.6
   string_validators:
     #path: ../string_validators
     git:
       url: https://github.com/djanogly/codewithandrea_flutter_packages
       path: packages/string_validators
-
+      ref: 1.22.6
 dev_dependencies:
   flutter_test:
     sdk: flutter

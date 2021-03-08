@@ -5,8 +5,8 @@ packages:
     dependency: "direct main"
     description:
       path: "packages/alert_dialogs"
-      ref: HEAD
-      resolved-ref: "61c1607be0d43558ad88d83547ba09a1b1a82957"
+      ref: "1.22.6"
+      resolved-ref: a1d75a67416fa9043b3d2d0585c4b43eb58fc536
       url: "https://github.com/djanogly/codewithandrea_flutter_packages"
     source: git
     version: "0.1.0"
@@ -56,8 +56,8 @@ packages:
     dependency: "direct main"
     description:
       path: "packages/custom_buttons"
-      ref: HEAD
-      resolved-ref: "61c1607be0d43558ad88d83547ba09a1b1a82957"
+      ref: "1.22.6"
+      resolved-ref: a1d75a67416fa9043b3d2d0585c4b43eb58fc536
       url: "https://github.com/djanogly/codewithandrea_flutter_packages"
     source: git
     version: "0.0.1"
@@ -225,8 +225,8 @@ packages:
     dependency: "direct main"
     description:
       path: "packages/string_validators"
-      ref: HEAD
-      resolved-ref: "61c1607be0d43558ad88d83547ba09a1b1a82957"
+      ref: "1.22.6"
+      resolved-ref: a1d75a67416fa9043b3d2d0585c4b43eb58fc536
       url: "https://github.com/djanogly/codewithandrea_flutter_packages"
     source: git
     version: "0.0.1"
